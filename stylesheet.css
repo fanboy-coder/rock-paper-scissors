@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Audiowide", sans-serif;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15vh;
+}
+
+.playZone {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    min-height: 15vh;
+    min-width: 15vh;
+    font-weight: 900;
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid black;
+    border-radius: 10px;
+    min-height: 40vh;
+    min-width: 40vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: center;
+}
+
+.button:hover{
+    border: 4px solid red;
+    cursor: pointer;
+}
+
+#rock {
+    background-image: url(../rock-paper-scissors/images/rock.png);
+}
+
+#paper {
+    background-image: url(../rock-paper-scissors/images/paper.png);
+}
+
+#scissors {
+    background-image: url(../rock-paper-scissors/images/scissors.png);
+}
+
+#modal-bg-display {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: visibility 0s opactity 0,5s;
+}
+
+.modal {
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.play-again {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-family: "Audiowide", sans-serif;
+    font-size: large;
+}
+
+.play-again:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
